@@ -1,0 +1,73 @@
+.footer{
+  width: 192rem;
+
+  &__inner{
+    width: 140rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6.5rem;
+    padding-bottom: 9rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 32.5rem;
+    text-align: left;
+
+    span{
+      padding-left: 3rem;
+    }
+  }
+
+  &__logo{
+    display: block;
+    width: 27rem;
+    height: 5.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__navigation{
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  &__list{
+    display: block;
+    width: 20rem;
+    text-align: left;
+    list-style: none;
+  }
+}
